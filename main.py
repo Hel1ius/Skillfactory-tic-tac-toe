@@ -25,8 +25,6 @@ def put_symbol(token):
 # Функция проверки на выигрышную комбинацию
 def check_winner():
     for i in win_combination:
-        print(win_combination)
-        print(i)
         if (box[i[0] - 1]) == (box[i[1] - 1]) == (box[i[2] - 1]):# Условие проверки одинаковые ли 3 символа
             return box[i[0] - 1] # Возвращаем выигрышный символ
 
